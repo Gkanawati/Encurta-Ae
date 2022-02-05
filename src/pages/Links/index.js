@@ -1,9 +1,54 @@
+import { useState, useEffect } from 'react';
 import './links.css';
 import { FiArrowLeft, FiLink, FiTrash } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+//services 
+import { getLinksSave, deleteLink } from '../../services/storedLinks'
+//components
+import LinkItem from '../../components/LinkItem';
 
 
 export default function Links() {
+
+  const [myLinks, setMyLinks] = useState([]);
+
+  const [data, setData] = useState({});
+  const [showModal, setShowModal] = useState(false);
+
+  const [emptyList, setEmptyList] = useState(false);
+
+  useEffect(() => {
+    async function getLinks() {
+      const result = await getLinksSave('@encurtaLink')
+
+      if (result.length === 0) {
+        // nossa lista está vazia
+        setEmptyList(true);
+      }
+
+      setMyLinks(result);
+    }
+
+    getLinks();
+  }, [])
+
+
+  function handleOpenLink(link) {
+    setData(link)
+    setShowModal(true)
+  }
+
+  function handleDelete(id) {
+    const result = deleteLink(myLinks, id)
+
+    if (result.length === 0) {
+      setEmptyList(true);
+    }
+
+    setMyLinks(result);
+  }
+
+
   return (
     <div>
       <div className='links-container'>
@@ -15,27 +60,31 @@ export default function Links() {
           <h1>Meus Links</h1>
         </div>
 
-        <div className='links-item'>
-          <button className='link'>
-            <FiLink size={18} color='#FFF' />
-            https://bit.ly/Portfolio_GK
-          </button>
+        {emptyList && (
+          <div className='links-item'>
+            <h2 className='empty-text'>Sua Lista está vazia</h2>
+          </div>
+        )}
 
-          <button className='trash'>
-            <FiTrash size={18} color='#FF5454' />
-          </button>
-        </div>
+        {myLinks.map(link => (
+          <div key={link.id} className='links-item'>
+            <button className='link' onClick={() => handleOpenLink(link)}>
+              <FiLink size={18} color='#FFF' />
+              {link.long_url}
+            </button>
 
-        <div className='links-item'>
-          <button className='link'>
-            <FiLink size={18} color='#FFF' />
-            https://bit.ly/Portfolio_GK
-          </button>
+            <button className='trash' onClick={() => handleDelete(link.id)} >
+              <FiTrash size={18} color='#FF5454' />
+            </button>
+          </div>
+        ))}
 
-          <button className='trash'>
-            <FiTrash size={18} color='#FF5454' />
-          </button>
-        </div>
+        {showModal && (
+          <LinkItem
+            closeModal={() => setShowModal(false)}
+            content={data}
+          />
+        )}
 
       </div>
     </div>

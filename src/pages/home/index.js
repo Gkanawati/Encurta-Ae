@@ -3,7 +3,9 @@ import { FiLink } from 'react-icons/fi';
 import './home.css';
 import Menu from '../../components/menu';
 import LinkItem from '../../components/LinkItem';
+//services
 import api from '../../services/api';
+import { saveLink } from '../../services/storedLinks'
 
 export default function Home() {
 
@@ -20,6 +22,8 @@ export default function Home() {
             setData(response.data);
             setShowModal(true);
 
+            saveLink('@encurtaLink', response.data)
+
             setLink('');
             setShowModal(true);
         } catch {
@@ -33,7 +37,7 @@ export default function Home() {
             <Menu />
             <div className="logo">
                 <img src="/logo.png" alt="Kanawati Link Logo" />
-                <h1>KanawatiLink</h1>
+                <h1>Encurta Aê</h1>
                 <span>Cole seu link para encurtar 🤙👇</span>
             </div>
 

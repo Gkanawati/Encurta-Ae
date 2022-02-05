@@ -67,6 +67,14 @@
     border-radius: 10px;
 }
 
+.empty-text {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 28px;
+}
+
 @media (max-width: 715px) {
     .links-container {
         width: 100%;
@@ -86,5 +94,11 @@
 
     .link svg {
         display: none;
+    }
+}
+
+@media (max-width: 555px) {
+    .links-container {
+        width: 80%;
     }
 }
