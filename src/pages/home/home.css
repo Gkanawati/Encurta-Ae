@@ -1,0 +1,114 @@
+.container-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.logo h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.logo span {
+    color: #fff;
+    margin-top: 14px;
+    margin-bottom: 34px;
+    font-size: 19px;
+}
+
+.area-input {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideY-input 1s;
+}
+
+
+/* Animação subindo area-input */
+@keyframes slideY-input {
+    from {
+        transform: translateY(90px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+.input-link {
+    width: 100%;
+    height: 46px;
+    background-color: rgba(255,255,255,.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.input-link svg {
+    margin: 0 8px;
+}
+
+.input-link input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    height: 46px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+input:focus-visible {
+    outline: none !important;
+}
+
+.input-link input::placeholder{
+    color: rgba(255,255,255,.8);
+}
+
+.btn-link {
+    width: 100%;
+    height: 46px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: all 0.4s;
+}
+
+.btn-link:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 615px) {
+    .logo img {
+        width: 95px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .area-input {
+        width: 85%;
+    }
+
+}

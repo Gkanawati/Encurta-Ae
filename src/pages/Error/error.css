@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container img {
+    max-width: 250px;
+    animation: shake 1.7s;
+}
+
+/* Animação Shake */
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0)
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0)
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0)
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0)
+    }
+}
+
+.container h1 {
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container .btn {
+    background-color: #fff;
+    color: #132742;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.container .btn:hover {
+    transform: scale(1.05);
+}
