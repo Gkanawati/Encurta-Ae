@@ -36,7 +36,7 @@ export default function Home() {
         <div className="container-home">
             <Menu />
             <div className="logo">
-                <img src="/logo.png" alt="Kanawati Link Logo" />
+                <img src="logo.png" alt="Kanawati Link Logo" />
                 <h1>Encurta Aê</h1>
                 <span>Cole seu link para encurtar 🤙👇</span>
             </div>
