@@ -75,6 +75,12 @@
     margin-top: 28px;
 }
 
+@media (max-width: 450px) {
+    .links-container {
+        max-width: 410px;
+    }
+}
+
 @media (max-width: 715px) {
     .links-container {
         width: 100%;
