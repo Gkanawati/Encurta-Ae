@@ -17,7 +17,9 @@ Todos os seus links são armazenados no localStorage do navegador, desse modo el
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    border-radius: 6px; color: #c9d1d9; text-decoration: none" target="_blank">https://gkanawati.github.io/Encurta-Ae</a>
+    border-radius: 6px; color: #c9d1d9; text-decoration: none" target="_blank">
+  https://gkanawati.github.io/Encurta-Ae
+</a>
 
 ## :computer: Tecnologias usadas:
 
