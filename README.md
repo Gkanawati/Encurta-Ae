@@ -12,12 +12,9 @@ Todos os seus links são armazenados no localStorage do navegador, desse modo el
 
 ## :link: Link do projeto:
 
-<a style="background-color: #161b22;
-     padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-    border-radius: 6px; color: #c9d1d9; text-decoration: none" href="https://gkanawati.github.io/Encurta-Ae/" target="_blank">Encurta-Ae</a>
+<a style="background-color: #161b22;padding: 16px;overflow: auto;font-size:85%;line-height: 1.45;border-radius: 6px; color: #c9d1d9; text-decoration: none" href="https://gkanawati.github.io/Encurta-Ae/" target="_blank">Encurta-Ae</a>
+
+<a target="_blank" style="text-decoration: none; color: #c9d1d9" href="https://gkanawati.github.io/Encurta-Ae/">Encurta-Ae</a>
 
 ## :computer: Tecnologias usadas:
 
