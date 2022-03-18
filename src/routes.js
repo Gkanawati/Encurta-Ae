@@ -6,7 +6,7 @@ import Error from './pages/Error'
 
 function RoutesApp() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/links" element={<Links />} />
