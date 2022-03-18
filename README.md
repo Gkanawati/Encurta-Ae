@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<h1 align="center">
+  🔗 Encurta-Ae
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :rocket: Sobre o projeto
 
-## Available Scripts
+Este é um site encurtador de links, feito para solucionar os problemas de quem utiliza muitas vezes links gigantescos e tem quem compartilhá-los. Todos sabemos que nao é nem um pouco agradável receber um link kilométrico. Dessa ideia surgiu o Encurta-Ae.
 
-In the project directory, you can run:
+Para encurtar seu link é muito simples! Basta copiar seu link inteiro e colá-lo no input, e instantaneamente, como num passo de mágica seu link sairá encurtado. Para realizar essa tarefa é utilizada a conexão com a api da bitly, a plataforma mais famosa atualmente em encurtar links, no entanto, o diferencial do Encurta-Ae é a sua facilidade e sua praticidade em usar, seu link é disponinalizado em tempo real.
 
-### `npm start`
+Todos os seus links são armazenados no localStorage do navegador, desse modo eles permanecem salvos mesmo que a página seja recarregada. Para deletar o link foi implementado uma lixeira na página meus links.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## :link: Link do projeto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    https://gkanawati.github.io/Encurta-Ae/
 
-### `npm test`
+## :computer: Tecnologias usadas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `React`
+- `Javascript`
+- `HTML`
+- `CSS`
 
-### `npm run build`
+## :bulb: Telas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![PrintEncurtaAe1](https://user-images.githubusercontent.com/87530595/158999694-fde4ff71-66ae-478f-b183-f26dd55c3e90.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![PrintEncurtaAe](https://user-images.githubusercontent.com/87530595/158999691-6d96cec5-6e73-429c-9448-3d1d78142613.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![printEncurtaAe2](https://user-images.githubusercontent.com/87530595/158999697-9f8c6d9b-9be5-4ff3-9881-7999ae04b9ce.png)
