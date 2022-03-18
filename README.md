@@ -14,14 +14,14 @@ Todos os seus links são armazenados no localStorage do navegador, desse modo el
 
     https://gkanawati.github.io/Encurta-Ae/
 
-## :computer: Tecnologias usadas:
+## :bulb: Tecnologias usadas:
 
 - `React`
 - `Javascript`
 - `HTML`
 - `CSS`
 
-## :bulb: Telas
+## :computer: Telas
 
 ![PrintEncurtaAe1](https://user-images.githubusercontent.com/87530595/158999694-fde4ff71-66ae-478f-b183-f26dd55c3e90.png)
 
