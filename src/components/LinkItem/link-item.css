@@ -40,6 +40,9 @@
 .container-link span {
     margin: 14px 0;
     color: #a7a7a7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .modal-link {
