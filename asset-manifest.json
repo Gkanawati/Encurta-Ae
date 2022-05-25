@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Encurta-Ae/static/css/main.2cea1a74.css",
+    "main.css": "/Encurta-Ae/static/css/main.27b49313.css",
     "main.js": "/Encurta-Ae/static/js/main.18c07983.js",
     "index.html": "/Encurta-Ae/index.html",
-    "main.2cea1a74.css.map": "/Encurta-Ae/static/css/main.2cea1a74.css.map",
+    "main.27b49313.css.map": "/Encurta-Ae/static/css/main.27b49313.css.map",
     "main.18c07983.js.map": "/Encurta-Ae/static/js/main.18c07983.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cea1a74.css",
+    "static/css/main.27b49313.css",
     "static/js/main.18c07983.js"
   ]
 }
