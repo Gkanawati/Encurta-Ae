@@ -1,5 +1,5 @@
 <h1 align="center">
-  🔗 Encurta-Ae
+  💻🔗 Encurta-Ae
 </h1>
 
 ## :rocket: Sobre o projeto
